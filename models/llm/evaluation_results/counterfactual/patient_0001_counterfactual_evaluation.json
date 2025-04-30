@@ -1,0 +1,20 @@
+{
+  "scores": {
+    "medical_accuracy": 9.0,
+    "clinical_relevance": 9.0,
+    "actionability": 8.0,
+    "completeness": 8.0,
+    "clarity": 10.0,
+    "guideline_alignment": 8.0
+  },
+  "feedback": {
+    "medical_accuracy": "The explanation is medically accurate, with appropriate interpretation of the patient's clinical features and the implications for cardiovascular disease risk. However, it's important to note that ST depression is not something that can be directly influenced by lifestyle changes or medication. It's a symptom of underlying heart disease, not a cause.",
+    "clinical_relevance": "The explanation is clinically relevant as it correctly identifies key risk factors for cardiovascular disease and interprets the patient's data in light of these factors. However, the explanation could have included more on the patient's high resting blood pressure and high cholesterol, which are significant risk factors for CVD.",
+    "actionability": "The explanation provides actionable recommendations for lifestyle changes that could potentially reduce the patient's CVD risk. However, the recommendation to increase maximum heart rate should be clarified. It's not about artificially increasing heart rate, but about improving cardiovascular fitness which could naturally lead to a higher maximum heart rate during exercise.",
+    "completeness": "The explanation covers the key aspects of the patient's data and provides recommendations for each. However, it could be more complete by addressing the patient's high blood pressure and high cholesterol, which are also significant risk factors for CVD.",
+    "clarity": "The explanation is clear and easy to understand. It uses plain language and explains medical terms well. The structure of the explanation, with separate sections for counterfactual explanations and recommendations, also aids clarity.",
+    "guideline_alignment": "The explanation aligns well with guidelines for managing cardiovascular disease risk, including the emphasis on lifestyle changes such as regular exercise, a healthy diet, and stress management. However, guidelines also emphasize the importance of managing blood pressure and cholesterol, which are not addressed in the explanation."
+  },
+  "overall_score": 8.65,
+  "patient_id": "0001"
+}

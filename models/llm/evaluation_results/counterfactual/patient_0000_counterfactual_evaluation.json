@@ -1,0 +1,20 @@
+{
+  "scores": {
+    "medical_accuracy": 9.0,
+    "clinical_relevance": 10.0,
+    "actionability": 10.0,
+    "completeness": 9.0,
+    "clarity": 10.0,
+    "guideline_alignment": 9.0
+  },
+  "feedback": {
+    "medical_accuracy": "The explanation is mostly accurate. It correctly identifies ST depression, serum cholesterol, and maximum heart rate as key modifiable features that can impact cardiovascular disease risk. However, the suggestion that reducing maximum heart rate can lower CVD risk is not entirely accurate. A high maximum heart rate during exercise is generally a sign of good cardiovascular fitness. It's the resting heart rate that should ideally be lower.",
+    "clinical_relevance": "The explanation is highly relevant to the patient's clinical situation. It takes into account the patient's specific data and uses it to provide personalized recommendations for reducing CVD risk.",
+    "actionability": "The explanation provides actionable recommendations for each of the identified modifiable features. It suggests specific lifestyle changes and medical interventions that the patient can undertake to improve their heart health.",
+    "completeness": "The explanation is comprehensive and covers all the necessary aspects, including the impact of changing key modifiable features, recommendations for these features, and the potential cumulative effect of addressing all factors together. However, it could have included more information about the non-modifiable factors that might be influencing the patient's CVD risk.",
+    "clarity": "The explanation is clear and easy to understand. It uses simple language and explains medical terms in a way that a layperson would be able to comprehend.",
+    "guideline_alignment": "The explanation aligns well with general guidelines for managing cardiovascular disease risk. However, the suggestion to reduce maximum heart rate is not in line with standard guidelines, which usually focus on lowering resting heart rate."
+  },
+  "overall_score": 9.5,
+  "patient_id": "0000"
+}

@@ -1,0 +1,45 @@
+You are a medical AI assistant helping to interpret cardiovascular disease (CVD) risk predictions.
+
+Patient Information:
+- ID: P0000
+- Age: 65 years
+- Sex: Male
+
+Clinical Features:
+- Chest Pain Type: typical angina
+- Resting Blood Pressure: 110 mm Hg
+- Serum Cholesterol: 248 mg/dl
+- Fasting Blood Sugar: Normal (≤120 mg/dl)
+- Resting ECG: normal
+- Maximum Heart Rate: 158 bpm
+- Exercise-Induced Angina: No
+- ST Depression: 0.6
+- ST Slope: downsloping
+- Number of Major Vessels: 2
+- Thalassemia: normal
+
+Model Predictions:
+1. Random Forest Model:
+   - Prediction: Low CVD Risk
+   - Confidence: 0.96
+   - Top Contributing Factors (positive SHAP values):
+     ST Depression (0.0332), Exercise-Induced Angina (0.0242), ST Slope (0.0221)
+   - Top Risk-Reducing Factors (negative SHAP values):
+     Number of Major Vessels (-0.2117), Chest Pain Type (-0.1533), Sex (-0.0677)
+
+2. XGBoost Model:
+   - Prediction: Low CVD Risk
+   - Confidence: 0.98
+   - Top Contributing Factors (positive SHAP values):
+     ST Depression (0.4446), ST Slope (0.2689), Thalassemia (0.2629)
+   - Top Risk-Reducing Factors (negative SHAP values):
+     Number of Major Vessels (-2.2106), Chest Pain Type (-1.4194), Sex (-0.5579)
+
+Please provide:
+1. A clinical interpretation of the patient's CVD risk based on the model predictions
+2. An explanation of the key factors contributing to the risk assessment
+3. Specific recommendations for risk management based on the patient's profile
+4. A discussion of any uncertainties or limitations in the prediction
+5. Suggestions for additional tests or information that might improve the assessment
+
+Your response should be in clear, non-technical language that a healthcare provider could use to explain the situation to a patient.

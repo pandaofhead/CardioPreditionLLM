@@ -1,0 +1,17 @@
+1. Counterfactual Explanations:
+   - ST Depression: If ST Depression is reduced from the current 2.8 mm to below 1 mm, this could significantly decrease the patient's CVD risk. ST Depression is an indicator of possible heart stress or disease; lower levels are generally healthier.
+   
+   - Resting Blood Pressure: If Resting Blood Pressure is increased from the current 110 mm Hg to a more normal range of 120-130 mm Hg, it may indicate better cardiovascular health, potentially reducing the CVD risk.
+   
+   - Maximum Heart Rate: If Maximum Heart Rate is increased from the current 126 bpm to around 150 bpm, it could suggest better cardiovascular fitness and potentially lower the CVD risk.
+
+2. Recommendations:
+   - ST Depression: Regular cardiovascular exercise and a diet low in saturated fats and cholesterol can help improve heart health. Medication may also be necessary. Improvements may be seen in 3-6 months, but will require ongoing management. The challenge here is maintaining lifestyle changes, which can be supported through regular monitoring and motivation.
+
+   - Resting Blood Pressure: Increase your resting blood pressure by incorporating moderate-intensity exercise into your routine, such as brisk walking or cycling. Diet can also play a role; consider a diet rich in whole grains, fruits, vegetables and low-fat dairy products. Changes can typically be noticed in 1-3 months. It may be challenging to maintain consistency in exercise and diet, but regular check-ups and a structured plan can help.
+
+   - Maximum Heart Rate: Improve your maximum heart rate through regular cardiovascular fitness, such as running, swimming, or cycling. It is important to gradually increase intensity to avoid sudden stress on the heart. Improvements can typically be noticed in 2-4 months. Staying motivated to exercise regularly can be a challenge, so consider joining a fitness group or hiring a personal trainer.
+
+3. If all these recommendations are implemented and maintained, it's estimated the risk score could decrease further, potentially moving the patient into an even lower risk category.
+
+4. There are interactions between these modifiable features. For example, regular exercise can help both reduce ST Depression and increase Maximum Heart Rate. Similarly, a healthy diet can contribute to regulating blood pressure and improving heart health. Thus, addressing these features together can have a greater, more beneficial impact on overall cardiovascular health than addressing them individually.

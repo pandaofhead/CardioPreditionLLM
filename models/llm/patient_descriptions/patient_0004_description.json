@@ -1,0 +1,90 @@
+{
+  "patient_id": "P0004",
+  "demographics": {
+    "age": 55,
+    "sex": "Female"
+  },
+  "clinical_features": {
+    "chest_pain_type": "typical angina",
+    "resting_blood_pressure": 180,
+    "serum_cholesterol": 327,
+    "fasting_blood_sugar": "Normal (\u2264120 mg/dl)",
+    "resting_ecg": "showing probable or definite left ventricular hypertrophy",
+    "max_heart_rate": 117,
+    "exercise_induced_angina": "Yes",
+    "st_depression": 3.4,
+    "st_slope": "flat",
+    "number_of_vessels": 0,
+    "thalassemia": "fixed defect"
+  },
+  "predictions": {
+    "random_forest": {
+      "prediction": "Low CVD Risk",
+      "confidence": 0.98,
+      "feature_importance": {
+        "cp": 0.1114716185105107,
+        "ca": 0.1052038826572582,
+        "thal": 0.0764242596500316,
+        "oldpeak": 0.0742755705127104,
+        "thalach": 0.0530285090229222,
+        "slope": 0.0485862525765085,
+        "exang": 0.0466167971639692,
+        "sex": 0.0391403608591059,
+        "age": 0.0338064773490959,
+        "chol": 0.0246428628290081,
+        "trestbps": 0.0195503662345742,
+        "restecg": 0.0145266924836565,
+        "fbs": 0.0030894689308913
+      },
+      "shap_values": {
+        "age": -0.013812213637330083,
+        "sex": 0.03716978901732692,
+        "cp": -0.1243439680848297,
+        "trestbps": -0.05011985701825297,
+        "chol": -0.027793605305405384,
+        "fbs": 0.0010164737230284264,
+        "restecg": -0.00565014352860656,
+        "thalach": -0.08494164894106673,
+        "exang": -0.09779068273607516,
+        "oldpeak": -0.17160158591494903,
+        "slope": -0.0695816242512463,
+        "ca": 0.06805311420676503,
+        "thal": 0.061278863863046325
+      }
+    },
+    "xgboost": {
+      "prediction": "Low CVD Risk",
+      "confidence": 0.9731300473213196,
+      "feature_importance": {
+        "cp": 1.2563490867614746,
+        "ca": 1.1869956254959106,
+        "oldpeak": 0.8887993693351746,
+        "thal": 0.788020670413971,
+        "sex": 0.494342565536499,
+        "slope": 0.4309512078762054,
+        "thalach": 0.3997800052165985,
+        "chol": 0.3697481453418731,
+        "age": 0.3678039014339447,
+        "exang": 0.2375280261039734,
+        "trestbps": 0.2030590921640396,
+        "restecg": 0.1641351282596588,
+        "fbs": 0.0369331575930118
+      },
+      "shap_values": {
+        "age": 0.07146275043487549,
+        "sex": 0.4602307081222534,
+        "cp": -1.2946465015411377,
+        "trestbps": -0.5861272811889648,
+        "chol": -0.5752339959144592,
+        "fbs": -0.013287201523780823,
+        "restecg": -0.03849545866250992,
+        "thalach": -0.6379640102386475,
+        "exang": -0.5644779205322266,
+        "oldpeak": -1.6309969425201416,
+        "slope": -0.5174309611320496,
+        "ca": 0.9039326310157776,
+        "thal": 0.8476511836051941
+      }
+    }
+  }
+}

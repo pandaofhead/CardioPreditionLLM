@@ -1,0 +1,38 @@
+Evaluation Summary for counterfactual Explanations
+==================================================
+
+Clinical Relevance:
+  Mean: 9.80
+  Std: 0.45
+  Min: 9.00
+  Max: 10.00
+  Median: 10.00
+
+Actionability:
+  Mean: 9.50
+  Std: 0.71
+  Min: 8.50
+  Max: 10.00
+  Median: 10.00
+
+Completeness:
+  Mean: 9.20
+  Std: 0.45
+  Min: 9.00
+  Max: 10.00
+  Median: 9.00
+
+Clarity:
+  Mean: 10.00
+  Std: 0.00
+  Min: 10.00
+  Max: 10.00
+  Median: 10.00
+
+Guideline Alignment:
+  Mean: 8.60
+  Std: 1.14
+  Min: 7.00
+  Max: 10.00
+  Median: 9.00
+

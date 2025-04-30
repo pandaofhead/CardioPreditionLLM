@@ -1,0 +1,19 @@
+{
+  "scores": {
+    "medical_accuracy": 8.0,
+    "clinical_relevance": 10.0,
+    "actionability": 9.0,
+    "completeness": 9.0,
+    "clarity": 10.0,
+    "guideline_alignment": 7.0
+  },
+  "feedback": {
+    "medical_accuracy": "The explanation is largely accurate with sound advice about exercise, diet, and lifestyle changes. However, the advice concerning blood pressure is questionable. While 110 mmHg is at the lower end of normal, suggesting an increase could be misleading as high blood pressure is a risk factor for cardiovascular disease.",
+    "clinical_relevance": "All the modifiable features mentioned are highly relevant in the clinical setting for managing cardiovascular disease. The explanation correctly identifies the importance of ST depression, resting blood pressure, and maximum heart rate in assessing CVD risk.",
+    "actionability": "The recommendations provided are actionable and feasible for the patient to follow. However, it would be helpful to include more specific dietary recommendations.",
+    "completeness": "The explanation is comprehensive, covering key modifiable features and providing counterfactual explanations. However, it lacks specific information on the impact of certain medications that could potentially aid in controlling these features.",
+    "clarity": "The explanation is very clear and understandable, using plain language that a patient would likely comprehend. The connection between each feature and CVD risk is well explained.",
+    "guideline_alignment": "Most of the recommendations align with generally accepted guidelines for managing cardiovascular health. However, the suggestion to increase blood pressure does not align with guidelines that generally advise maintaining blood pressure at a normal level and reducing if it is high."
+  },
+  "raw_response": "1. Medical Accuracy (0-10):\nScore: 8\nFeedback: The explanation is largely accurate with sound advice about exercise, diet, and lifestyle changes. However, the advice concerning blood pressure is questionable. While 110 mmHg is at the lower end of normal, suggesting an increase could be misleading as high blood pressure is a risk factor for cardiovascular disease. \n\n2. Clinical Relevance (0-10):\nScore: 10\nFeedback: All the modifiable features mentioned are highly relevant in the clinical setting for managing cardiovascular disease. The explanation correctly identifies the importance of ST depression, resting blood pressure, and maximum heart rate in assessing CVD risk.\n\n3. Actionability (0-10):\nScore: 9\nFeedback: The recommendations provided are actionable and feasible for the patient to follow. However, it would be helpful to include more specific dietary recommendations.\n\n4. Completeness (0-10):\nScore: 9\nFeedback: The explanation is comprehensive, covering key modifiable features and providing counterfactual explanations. However, it lacks specific information on the impact of certain medications that could potentially aid in controlling these features. \n\n5. Clarity (0-10):\nScore: 10\nFeedback: The explanation is very clear and understandable, using plain language that a patient would likely comprehend. The connection between each feature and CVD risk is well explained.\n\n6. Guideline Alignment (0-10):\nScore: 7\nFeedback: Most of the recommendations align with generally accepted guidelines for managing cardiovascular health. However, the suggestion to increase blood pressure does not align with guidelines that generally advise maintaining blood pressure at a normal level and reducing if it is high."
+}

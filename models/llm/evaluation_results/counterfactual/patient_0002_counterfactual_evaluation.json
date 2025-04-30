@@ -1,0 +1,20 @@
+{
+  "scores": {
+    "medical_accuracy": 9.0,
+    "clinical_relevance": 9.0,
+    "actionability": 9.0,
+    "completeness": 8.0,
+    "clarity": 9.0,
+    "guideline_alignment": 8.0
+  },
+  "feedback": {
+    "medical_accuracy": "The explanation is mostly accurate. The connections between ST depression, resting blood pressure, exercise-induced angina, and cardiovascular disease are correctly explained. However, the explanation could be improved by mentioning that these changes should be made under the supervision of a healthcare provider, as abrupt changes could have adverse effects.",
+    "clinical_relevance": "The explanation is highly relevant to the patient's clinical situation. It takes into account the patient's specific clinical features and provides personalized recommendations. However, it would be beneficial to include more information about how the patient's age and sex might affect their cardiovascular risk and the effectiveness of the recommended interventions.",
+    "actionability": "The explanation provides clear and specific actions that the patient can take to reduce their cardiovascular risk, including lifestyle changes and potential medication. However, it would be helpful to provide more specific examples of the recommended dietary changes and exercises.",
+    "completeness": "The explanation is comprehensive and covers all the important aspects of the patient's cardiovascular risk. However, it could be improved by discussing the potential side effects of the recommended interventions and the importance of regular follow-up with a healthcare provider.",
+    "clarity": "The explanation is clear and easy to understand. It uses simple language and explains medical terms in a way that a layperson could understand. However, it could be improved by providing a brief summary at the end to reinforce the main points.",
+    "guideline_alignment": "The explanation aligns well with current guidelines for cardiovascular risk reduction, which emphasize lifestyle changes and potential medication. However, it would be beneficial to mention that these recommendations are based on current guidelines and that the patient should consult with their healthcare provider for the most up-to-date information."
+  },
+  "overall_score": 8.75,
+  "patient_id": "0002"
+}

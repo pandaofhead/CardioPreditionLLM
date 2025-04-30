@@ -1,0 +1,19 @@
+{
+  "scores": {
+    "medical_accuracy": 9.0,
+    "clinical_relevance": 10.0,
+    "actionability": 10.0,
+    "completeness": 9.0,
+    "clarity": 10.0,
+    "guideline_alignment": 9.0
+  },
+  "feedback": {
+    "medical_accuracy": "The explanation is mostly accurate. However, reducing ST depression to 0.0 mm may not always be possible or necessary, as some degree of ST depression can be normal.",
+    "clinical_relevance": "All the factors mentioned are clinically relevant and are known to affect cardiovascular disease risk. It's important to manage these factors to reduce the risk of CVD.",
+    "actionability": "The explanation provides clear and actionable advice for each of the risk factors identified, including targets, interventions, timelines, and potential challenges.",
+    "completeness": "The explanation is comprehensive and covers all major aspects of each risk factor. However, it could include more specifics about potential medications or treatments that may be helpful.",
+    "clarity": "The explanation is well-organized and easy to understand. It clearly communicates the key factors, their potential impact, and how they can be addressed.",
+    "guideline_alignment": "The recommendations align closely with guidelines for managing cardiovascular disease risk. However, it's noteworthy that medication recommendations should always be personalized and come from a healthcare provider."
+  },
+  "raw_response": "1. Medical Accuracy (0-10):\nScore: 9\nFeedback: The explanation is mostly accurate. However, reducing ST depression to 0.0 mm may not always be possible or necessary, as some degree of ST depression can be normal. \n\n2. Clinical Relevance (0-10):\nScore: 10\nFeedback: All the factors mentioned are clinically relevant and are known to affect cardiovascular disease risk. It's important to manage these factors to reduce the risk of CVD.\n\n3. Actionability (0-10):\nScore: 10\nFeedback: The explanation provides clear and actionable advice for each of the risk factors identified, including targets, interventions, timelines, and potential challenges. \n\n4. Completeness (0-10):\nScore: 9\nFeedback: The explanation is comprehensive and covers all major aspects of each risk factor. However, it could include more specifics about potential medications or treatments that may be helpful.\n\n5. Clarity (0-10):\nScore: 10\nFeedback: The explanation is well-organized and easy to understand. It clearly communicates the key factors, their potential impact, and how they can be addressed.\n\n6. Guideline Alignment (0-10):\nScore: 9\nFeedback: The recommendations align closely with guidelines for managing cardiovascular disease risk. However, it's noteworthy that medication recommendations should always be personalized and come from a healthcare provider."
+}

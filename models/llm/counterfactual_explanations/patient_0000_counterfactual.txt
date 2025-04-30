@@ -1,0 +1,21 @@
+1. Impact of Changing Key Modifiable Features:
+
+   - ST Depression: If ST depression is decreased from 0.6 mm to a more optimal level, such as 0.2 mm, the patient's CVD risk may decrease. ST depression is a sign of heart stress or damage; lowering it can indicate improved heart health.
+
+   - Serum Cholesterol: If serum cholesterol is reduced from 248 mg/dl to a healthier level, such as below 200 mg/dl, the patient's CVD risk could decrease. High cholesterol can lead to a buildup of plaques in the arteries, which can cause heart disease.
+
+   - Maximum Heart Rate: If the maximum heart rate is reduced from 158 bpm to a more optimal level, say around 140 bpm, the patient's CVD risk could decrease. A high maximum heart rate, especially during exercise, can put undue stress on the heart.
+
+2. Recommendations for Modifiable Features:
+
+   - ST Depression: Regular check-ups and ECG tests can help monitor ST depression. Regular exercise and a healthy diet can help improve overall heart health, potentially reducing ST depression. Changes may take several months to become noticeable.
+
+   - Serum Cholesterol: Reducing intake of saturated and trans fats, increasing physical activity, and maintaining a healthy weight can help lower cholesterol levels. If lifestyle changes aren't enough, medication might be necessary. It can take at least three to six months to see significant changes in cholesterol levels.
+
+   - Maximum Heart Rate: Regular moderate exercise, stress management, and avoiding stimulants like caffeine can help manage heart rate levels. Monitor progress with regular check-ups. It may take several weeks or months to see significant improvements.
+
+3. If all these changes are implemented and successfully achieved, the patient's risk of cardiovascular disease could decrease significantly, potentially changing the model's prediction from 'low risk' to 'very low risk' with high confidence.
+
+4. Interactions between Modifiable Features:
+
+   The features interact and can have a cumulative effect. For example, lowering cholesterol can lead to a decrease in ST depression and a healthier heart rate. This is because less arterial plaque allows for better blood flow, reducing stress on the heart. Therefore, addressing all these factors together may have a more significant impact than addressing them individually.

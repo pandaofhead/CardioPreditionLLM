@@ -1,0 +1,19 @@
+{
+  "scores": {
+    "medical_accuracy": 9.0,
+    "clinical_relevance": 10.0,
+    "actionability": 10.0,
+    "completeness": 9.0,
+    "clarity": 10.0,
+    "guideline_alignment": 10.0
+  },
+  "feedback": {
+    "medical_accuracy": "The explanation provides an accurate understanding of the features affecting cardiovascular disease risk. However, the specific value for ST depression reduction could be more evidence-based.",
+    "clinical_relevance": "The explanation refers to clinically relevant features and provides a good understanding of their impact on the patient's cardiovascular disease risk.",
+    "actionability": "The explanation provides clear, actionable advice for the patient, including regular medication, exercise, and lifestyle changes. These are all realistic and achievable changes the patient can make to improve their health.",
+    "completeness": "The explanation is thorough and considers potential interactions between features. However, it could benefit from a more detailed discussion of how these changes could affect other aspects of the patient's health.",
+    "clarity": "The explanation is clear and easy to understand. It uses simple language and explains the medical terms well.",
+    "guideline_alignment": "The explanation aligns well with general guidelines for managing cardiovascular disease risk. It includes regular monitoring, medication adjustments, and lifestyle changes, all of which are recommended for patients with increased cardiovascular disease risk."
+  },
+  "raw_response": "1. Medical Accuracy (0-10):\nScore: 9\nFeedback: The explanation provides an accurate understanding of the features affecting cardiovascular disease risk. However, the specific value for ST depression reduction could be more evidence-based. \n\n2. Clinical Relevance (0-10):\nScore: 10\nFeedback: The explanation refers to clinically relevant features and provides a good understanding of their impact on the patient's cardiovascular disease risk. \n\n3. Actionability (0-10):\nScore: 10\nFeedback: The explanation provides clear, actionable advice for the patient, including regular medication, exercise, and lifestyle changes. These are all realistic and achievable changes the patient can make to improve their health.\n\n4. Completeness (0-10):\nScore: 9\nFeedback: The explanation is thorough and considers potential interactions between features. However, it could benefit from a more detailed discussion of how these changes could affect other aspects of the patient's health.\n\n5. Clarity (0-10):\nScore: 10\nFeedback: The explanation is clear and easy to understand. It uses simple language and explains the medical terms well. \n\n6. Guideline Alignment (0-10):\nScore: 10\nFeedback: The explanation aligns well with general guidelines for managing cardiovascular disease risk. It includes regular monitoring, medication adjustments, and lifestyle changes, all of which are recommended for patients with increased cardiovascular disease risk."
+}

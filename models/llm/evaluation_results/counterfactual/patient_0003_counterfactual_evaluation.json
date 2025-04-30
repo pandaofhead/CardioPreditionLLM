@@ -1,0 +1,20 @@
+{
+  "scores": {
+    "medical_accuracy": 8.0,
+    "clinical_relevance": 9.0,
+    "actionability": 9.0,
+    "completeness": 9.0,
+    "clarity": 10.0,
+    "guideline_alignment": 8.0
+  },
+  "feedback": {
+    "medical_accuracy": "The explanation is generally medically accurate, but there are some issues. For instance, increasing resting blood pressure from 110 mm Hg to 120-130 mm Hg is not typically recommended. Normal blood pressure is generally considered to be around 120/80 mm Hg, but lower blood pressure in a healthy individual is not usually a concern unless it causes symptoms.",
+    "clinical_relevance": "The explanation is clinically relevant. It takes into account the patient's specific clinical features and provides personalized recommendations based on these features. However, it could be improved by considering the patient's overall health and lifestyle, not just the specific features mentioned.",
+    "actionability": "The explanation provides actionable advice for the patient, including specific lifestyle changes and potential treatments. However, it could be improved by providing more specific, personalized recommendations, such as suggesting specific exercises or dietary changes based on the patient's preferences and lifestyle.",
+    "completeness": "The explanation is comprehensive and covers all the main points, including the patient's clinical features, the predicted risk, and recommendations for reducing this risk. However, it could be improved by providing more information on the potential benefits and risks of the recommended changes, as well as potential alternatives.",
+    "clarity": "The explanation is clear and easy to understand. It uses simple language and explains medical terms in a way that a layperson could understand.",
+    "guideline_alignment": "The explanation generally aligns with medical guidelines, particularly in its recommendations for exercise and a healthy diet. However, the suggestion to increase resting blood pressure is not typically recommended in medical guidelines, as mentioned above."
+  },
+  "overall_score": 8.75,
+  "patient_id": "0003"
+}
