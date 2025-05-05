@@ -578,93 +578,99 @@ def display_patient_descriptions():
                 </div>
                 """, unsafe_allow_html=True)
                 
-                if 'patient_data' in description:
-                    data = description['patient_data']
-                    cols = st.columns(2)
-                    
-                    with cols[0]:
-                        st.subheader("Demographics")
+                # Parse the patient data based on the actual JSON structure
+                cols = st.columns(2)
+                
+                with cols[0]:
+                    st.subheader("Demographics")
+                    if 'demographics' in description:
+                        demo = description['demographics']
                         demo_data = {
-                            "Age": data.get('age', 'N/A'),
-                            "Sex": "Male" if data.get('sex', 0) == 1 else "Female"
+                            "Age": demo.get('age', 'N/A'),
+                            "Sex": demo.get('sex', 'N/A')
                         }
                         st.table(pd.DataFrame(list(demo_data.items()), columns=["Feature", "Value"]))
-                        
-                        st.subheader("Vital Signs")
+                    
+                    st.subheader("Vital Signs")
+                    if 'clinical_features' in description:
+                        cf = description['clinical_features']
                         vital_data = {
-                            "Resting Blood Pressure": f"{data.get('trestbps', 'N/A')} mm Hg",
-                            "Serum Cholesterol": f"{data.get('chol', 'N/A')} mg/dl",
-                            "Fasting Blood Sugar": "≥ 120 mg/dl" if data.get('fbs', 0) == 1 else "< 120 mg/dl",
-                            "Maximum Heart Rate": data.get('thalach', 'N/A')
+                            "Resting Blood Pressure": f"{cf.get('resting_blood_pressure', 'N/A')} mm Hg",
+                            "Serum Cholesterol": f"{cf.get('serum_cholesterol', 'N/A')} mg/dl",
+                            "Fasting Blood Sugar": cf.get('fasting_blood_sugar', 'N/A'),
+                            "Maximum Heart Rate": cf.get('max_heart_rate', 'N/A')
                         }
                         st.table(pd.DataFrame(list(vital_data.items()), columns=["Feature", "Value"]))
-                    
-                    with cols[1]:
-                        st.subheader("Cardiac Assessment")
-                        cp_types = {
-                            0: "Typical Angina",
-                            1: "Atypical Angina", 
-                            2: "Non-anginal Pain", 
-                            3: "Asymptomatic"
-                        }
-                        restecg_types = {
-                            0: "Normal", 
-                            1: "ST-T Wave Abnormality", 
-                            2: "Left Ventricular Hypertrophy"
-                        }
-                        slope_types = {
-                            0: "Upsloping", 
-                            1: "Flat", 
-                            2: "Downsloping"
-                        }
-                        thal_types = {
-                            1: "Fixed Defect", 
-                            2: "Normal", 
-                            3: "Reversible Defect"
-                        }
-                        
+                
+                with cols[1]:
+                    st.subheader("Cardiac Assessment")
+                    if 'clinical_features' in description:
+                        cf = description['clinical_features']
                         cardiac_data = {
-                            "Chest Pain Type": cp_types.get(data.get('cp', 0), 'N/A'),
-                            "Resting ECG": restecg_types.get(data.get('restecg', 0), 'N/A'),
-                            "Exercise Induced Angina": "Yes" if data.get('exang', 0) == 1 else "No",
-                            "ST Depression": data.get('oldpeak', 'N/A'),
-                            "ST Segment Slope": slope_types.get(data.get('slope', 0), 'N/A'),
-                            "Fluoroscopy Vessels": data.get('ca', 'N/A'),
-                            "Thalassemia": thal_types.get(data.get('thal', 0), 'N/A')
+                            "Chest Pain Type": cf.get('chest_pain_type', 'N/A'),
+                            "Resting ECG": cf.get('resting_ecg', 'N/A'),
+                            "Exercise Induced Angina": cf.get('exercise_induced_angina', 'N/A'),
+                            "ST Depression": cf.get('st_depression', 'N/A'),
+                            "ST Segment Slope": cf.get('st_slope', 'N/A'),
+                            "Number of Vessels": cf.get('number_of_vessels', 'N/A'),
+                            "Thalassemia": cf.get('thalassemia', 'N/A')
                         }
                         st.table(pd.DataFrame(list(cardiac_data.items()), columns=["Feature", "Value"]))
                 
-                # Display feature importance
-                st.subheader("Feature Importance")
-                
-                if 'rf_shap_dict' in description and 'xgb_shap_dict' in description:
-                    shap_tabs = st.tabs(["Random Forest", "XGBoost"])
+                # Display model predictions
+                if 'predictions' in description:
+                    st.subheader("Model Predictions")
+                    preds = description['predictions']
                     
-                    # RF SHAP values
-                    with shap_tabs[0]:
-                        rf_shap = description['rf_shap_dict']
-                        rf_shap_df = pd.DataFrame({
-                            'Feature': list(rf_shap.keys()),
-                            'SHAP Value': list(rf_shap.values())
-                        }).sort_values('SHAP Value', ascending=False)
-                        
-                        fig, ax = plt.subplots(figsize=(10, 6))
-                        sns.barplot(x='SHAP Value', y='Feature', data=rf_shap_df, ax=ax)
-                        ax.set_title('Random Forest SHAP Values')
-                        st.pyplot(fig)
+                    model_tabs = st.tabs(["Random Forest", "XGBoost"])
                     
-                    # XGBoost SHAP values
-                    with shap_tabs[1]:
-                        xgb_shap = description['xgb_shap_dict']
-                        xgb_shap_df = pd.DataFrame({
-                            'Feature': list(xgb_shap.keys()),
-                            'SHAP Value': list(xgb_shap.values())
-                        }).sort_values('SHAP Value', ascending=False)
-                        
-                        fig, ax = plt.subplots(figsize=(10, 6))
-                        sns.barplot(x='SHAP Value', y='Feature', data=xgb_shap_df, ax=ax)
-                        ax.set_title('XGBoost SHAP Values')
-                        st.pyplot(fig)
+                    # Random Forest prediction
+                    with model_tabs[0]:
+                        if 'random_forest' in preds:
+                            rf = preds['random_forest']
+                            st.markdown(f"""
+                            <div class="prediction-box">
+                                <p><strong>Prediction:</strong> {rf.get('prediction', 'N/A')}</p>
+                                <p><strong>Confidence:</strong> {rf.get('confidence', 'N/A'):.2f}</p>
+                            </div>
+                            """, unsafe_allow_html=True)
+                            
+                            # Display SHAP values
+                            if 'shap_values' in rf:
+                                rf_shap = rf['shap_values']
+                                rf_shap_df = pd.DataFrame({
+                                    'Feature': list(rf_shap.keys()),
+                                    'SHAP Value': list(rf_shap.values())
+                                }).sort_values('SHAP Value', ascending=False)
+                                
+                                fig, ax = plt.subplots(figsize=(10, 6))
+                                sns.barplot(x='SHAP Value', y='Feature', data=rf_shap_df, ax=ax)
+                                ax.set_title('Random Forest SHAP Values')
+                                st.pyplot(fig)
+                    
+                    # XGBoost prediction
+                    with model_tabs[1]:
+                        if 'xgboost' in preds:
+                            xgb = preds['xgboost']
+                            st.markdown(f"""
+                            <div class="prediction-box">
+                                <p><strong>Prediction:</strong> {xgb.get('prediction', 'N/A')}</p>
+                                <p><strong>Confidence:</strong> {xgb.get('confidence', 'N/A'):.2f}</p>
+                            </div>
+                            """, unsafe_allow_html=True)
+                            
+                            # Display SHAP values
+                            if 'shap_values' in xgb:
+                                xgb_shap = xgb['shap_values']
+                                xgb_shap_df = pd.DataFrame({
+                                    'Feature': list(xgb_shap.keys()),
+                                    'SHAP Value': list(xgb_shap.values())
+                                }).sort_values('SHAP Value', ascending=False)
+                                
+                                fig, ax = plt.subplots(figsize=(10, 6))
+                                sns.barplot(x='SHAP Value', y='Feature', data=xgb_shap_df, ax=ax)
+                                ax.set_title('XGBoost SHAP Values')
+                                st.pyplot(fig)
                 
                 # Display prompt if available
                 if os.path.exists(prompt_file):
